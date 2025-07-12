@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Info Gempa</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+            
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+      <!-- Responsive -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+      <!-- fevicon -->
+      <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+
+      <!-- Fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+      <!-- BaguetteBox -->
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- top -->
+       <!-- header -->
+       <header class="header-area">
+         <div class="left">
+            <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+         </div>
+         <div class="right">
+            <a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a>
+         </div>
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-sm-3 logo_sm">
+                  <div class="logo">
+                     <a href="index.html"></a>
+                  </div>
+               </div>
+               <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-9">
+                  <div class="navbar-area">
+                     <nav class="site-navbar">
+                        <ul>
+                           <li><a style="opacity: 0;" href="#">hahahah</a></li>
+                           <li><a href="{{ url_for('peta') }}">Peta</a></li>
+                           <li><a style="opacity: 0;" href="#">hahahaha</a></li>
+                           <li><a href="{{ url_for('home') }}">Beranda</a></li>
+                           <li><a style="opacity: 0;" href="#">hahahaha</a></li>
+                           <li><a href="#" class="logo_midle">Klaster</a></li>
+                           <li><a style="opacity: 0;" href="#">hahaha</a></li>
+                        </ul>
+                        <button class="nav-toggler">
+                        <span></span>
+                        </button>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+   <!-- end header -->
+      <!-- about -->
+      <div class="about mt-4">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     <h2>Klaster Gempa Bumi</h2>
+                  </div>
+               </div>
+               <div class="card p-3 mb-4" style="border-radius: 12px; background-color: #f8f9fa;">
+                  <div class="d-flex justify-content-around flex-wrap text-center">
+                     <div class="mx-2">
+                        <span style="display:inline-block; width:15px; height:15px; background-color:red; border-radius:50%; margin-right:8px;"></span>
+                        Klaster 0
+                     </div>
+                     <div class="mx-2">
+                        <span style="display:inline-block; width:15px; height:15px; background-color:blue; border-radius:50%; margin-right:8px;"></span>
+                        Klaster 1
+                     </div>
+                     <div class="mx-2">
+                        <span style="display:inline-block; width:15px; height:15px; background-color:green; border-radius:50%; margin-right:8px;"></span>
+                        Klaster 2
+                     </div>
+                     <div class="mx-2">
+                        <span style="display:inline-block; width:15px; height:15px; background-color:purple; border-radius:50%; margin-right:8px;"></span>
+                        Klaster 3
+                     </div>
+                  </div>
+               </div>
+               
+               <iframe src="{{ url_for('static', filename='peta_kmeans_filtered.html') }}"
+                        width="100%" height="600px"
+                        style="border: 2px solid #ccc; border-radius: 10px; margin-top: 20px;"></iframe>
+                        
+                        <div class="mt-4">
+                           <div class="mb-4">
+                           <h3 class="mb-2 font-semibold">Deskripsi Setiap Klaster:</h3>
+                           <div style="display: flex; flex-direction: column; gap: 10px;">
+                              <div style="display: flex; align-items: center;">
+                                 <span style="display:inline-block; width:15px; height:15px; background-color:red; border-radius:50%; margin-right:8px;"></span>
+                                 <strong>Klaster 0</strong>: Wilayah Indonesia bagian selatan hingga barat, gempa dangkal (rata-rata <strong> 29.64 km</strong>), berkekuatan rendah hingga sedang (rata-rata <strong> 3.32 SR</strong>).
+                              </div>
+                              <div style="display: flex; align-items: center;">
+                                 <span style="display:inline-block; width:15px; height:15px; background-color:blue; border-radius:50%; margin-right:8px;"></span>
+                                 <strong>Klaster 1</strong>: Wilayah tengah hingga timur Indonesia, gempa sangat dalam (rata-rata <strong> 238.28 km</strong>), berkekuatan cukup besar (rata-rata <strong> 4.36 SR</strong>).
+                              </div>
+                              <div style="display: flex; align-items: center;">
+                                 <span style="display:inline-block; width:15px; height:15px; background-color:green; border-radius:50%; margin-right:8px;"></span>
+                                 <strong>Klaster 2</strong>: Wilayah barat dan barat laut Indonesia, gempa dangkal–menengah (rata-rata  <strong> 35.44 km</strong>), berkekuatan sedang (rata-rata <strong> 3.73 SR</strong>).
+                              </div>
+                              <div style="display: flex; align-items: center;">
+                                 <span style="display:inline-block; width:15px; height:15px; background-color:purple; border-radius:50%; margin-right:8px;"></span>
+                                 <strong>Klaster 3</strong>: Wilayah tengah ke timur Indonesia, gempa dangkal (rata-rata  <strong> 31.96 km</strong>), berkekuatan sedang (rata-rata <strong> 3.61 SR</strong>).
+                              </div>
+                           </div>
+                        </div>
+
+                           
+                           
+                           <div class="titlepage text_align_left">
+                              <p></p>
+                              <h3 class="mb-4">Tabel Wilayah Berdasarkan Klaster</h3>
+                              
+                          </div>
+                          
+                           <div class="overflow-x-auto">
+                              <table class="table-fixed w-full border border-gray-400 border-collapse">
+                                 <thead class="bg-gray-100">
+                                     <tr>
+                                         <th class="border border-gray-400 px-4 py-2 text-left">
+                                             <span style="display:inline-block; width:15px; height:15px; background-color:red; border-radius:50%; margin-right:8px;"></span> Klaster 0
+                                         </th>
+                                         <th class="border border-gray-400 px-4 py-2 text-left">
+                                             <span style="display:inline-block; width:15px; height:15px; background-color:blue; border-radius:50%; margin-right:8px;"></span> Klaster 1
+                                         </th>
+                                         <th class="border border-gray-400 px-4 py-2 text-left">
+                                             <span style="display:inline-block; width:15px; height:15px; background-color:green; border-radius:50%; margin-right:8px;"></span> Klaster 2
+                                         </th>
+                                         <th class="border border-gray-400 px-4 py-2 text-left">
+                                             <span style="display:inline-block; width:15px; height:15px; background-color:purple; border-radius:50%; margin-right:8px;"></span> Klaster 3
+                                         </th>
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                     {% for row in table_data %}
+                                     <tr class="{% if loop.index0 % 2 == 0 %}bg-white{% else %}bg-gray-50{% endif %} hover:bg-yellow-50">
+                                         <td class="border border-gray-400 px-4 py-2">{{ row['Cluster 0'] or '' }}</td>
+                                         <td class="border border-gray-400 px-4 py-2">{{ row['Cluster 1'] or '' }}</td>
+                                         <td class="border border-gray-400 px-4 py-2">{{ row['Cluster 2'] or '' }}</td>
+                                         <td class="border border-gray-400 px-4 py-2">{{ row['Cluster 3'] or '' }}</td>
+                                     </tr>
+                                     {% endfor %}
+                                 </tbody>
+                             </table>
+                             
+                           </div>
+                       </div>
+                       <div class="container mt-5 mb-4">
+   <div class="text-center">
+      <p style="font-size: 14px; color: #666;">
+         <strong>Sumber Data:</strong>
+         <a href="https://www.kaggle.com/datasets/kekavigi/earthquakes-in-indonesia/data" target="_blank" style="color: #007bff; text-decoration: underline;">
+            Earthquakes in Indonesia - Kaggle Dataset
+         </a>
+      </p>
+   </div>
+</div>
+                       
+              
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Resources</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Home</a><li>
+                                 <li><a href="javascript:void(0)">What we do</a><li>
+                                 <li><a href="javascript:void(0)">Media</a><li>
+                                 <li><a href="javascript:void(0)">Travel Advice</a><li>
+                                 <li><a href="javascript:void(0)">Protection</a><li>
+                                 <li><a href="javascript:void(0)">Care</a><li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                             <h3>About</h3>
+                              <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Contact  Us</h3>
+                                <ul class="top_infomation">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           Making this the first true  
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                           Call : +01 1234567890
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                           <a href="Javascript:void(0)">Email : demo@gmail.com</a>
+                        </li>
+                     </ul>     
+                     </div>
+                  </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>countrys</h3>
+                              <div class="map">
+                                <img src="images/map.png" alt="#"/>
+                              </div>
+                           </div>
+                        </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/"> Free html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+      
+   </body>
+</html>

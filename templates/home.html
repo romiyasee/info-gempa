@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        
+        <!-- site metas -->
+        <title>Info Gempa</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+      
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        
+        <!-- style css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        
+        <!-- Responsive -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+        
+        <!-- fevicon -->
+        <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+        
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      
+        <!-- BaguetteBox -->
+        <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- top -->
+                    <!-- header -->
+         <header class="header-area">
+            <div class="left">
+               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <div class="right">
+               <a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+            <div class="container">
+               <div class="row d_flex">
+                  <div class="col-sm-3 logo_sm">
+                     <div class="logo">
+                        <a href="index.html"></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a style="opacity: 0;" href="#">hahahah</a></li>
+                              <li><a href="{{ url_for('peta') }}">Peta</a></li>
+                              <li><a style="opacity: 0;" href="#">hahahaha</a></li>
+                              <li><a href="index.html" class="logo_midle">Beranda</a></li>
+                              <li><a style="opacity: 0;" href="#">hahahaha</a></li>
+                              <li><a href="{{ url_for('klaster') }}">Klaster</a></li>
+                              <li><a style="opacity: 0;" href="#">hahaha</a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+      <!-- end header -->
+            <div class="full_bg">
+      <!-- header inner -->
+         <div class="section">
+            <!-- carousel code -->
+            <div id="banner1" class="carousel slide slider_main">
+               <ol class="carousel-indicators ">
+                  <li data-target="#banner1" data-slide-to="0" class="indicator-li-1">01</li>
+                  <li data-target="#banner1" data-slide-to="1" class="">02</li>
+                  <li data-target="#banner1" data-slide-to="2" class="active">03</li>
+               </ol>
+               <div class="carousel-inner">
+                  <!-- first slide -->
+                  <div class="carousel-item active">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                 <div class="photog">
+                                    <h1>Mitigasi Dini<br>Gempa Bumi</h1>
+                                    <a class="read_more" href="javascript:void(0)" >Read More</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- second slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                    <h1>Edukasi<br>Gempa Bumi</h1>
+                                    <a class="read_more" href="javascript:void(0)" >Read More</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- third slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                    <h1>Persebaran<br>Gempa Bumi</h1>
+                                    <a class="read_more" href="javascript:void(0)" >Read More</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- controls -->
+               <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- end banner -->
+      <!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     <h2>Tentang Website Ini</h2>
+                     <p>Website ini menyajikan edukasi seputar gempa bumi, termasuk penyebab, jenis, dan langkah-langkah yang tepat saat gempa terjadi. Selain itu, terdapat peta interaktif untuk melihat persebaran gempa bumi di Indonesia, serta klasterisasi daerah rawan gempa guna membantu masyarakat lebih waspada dan siap menghadapi potensi bencana.
+
+                     </p>
+                     <a class="read_more" href="about.html">About More</a>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="about_img text_align_center">
+                    <figure><img src="{{ url_for('static', filename='images/about.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+     <!-- coronata -->
+      <div class="coronata">
+         <div class="container">
+            <div class="row d_flex grid">
+               <div class="col-md-7">
+                  <div class="coronata_img text_align_center">
+                     <figure><img src="{{ url_for('static', filename='images/gempa.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-5 oder1">
+                  <div class="titlepage text_align_left">
+                     <h2>Apa itu Gempa Bumi?</h2>
+                     <p>Gempabumi adalah peristiwa bergetarnya bumi akibat pelepasan energi di dalam bumi secara tiba-tiba yang ditandai dengan patahnya lapisan batuan pada kerak bumi. Akumulasi energi penyebab terjadinya gempabumi dihasilkan dari pergerakan lempeng-lempeng tektonik. Energi yang dihasilkan dipancarkan kesegala arah berupa gelombang gempabumi sehingga efeknya dapat dirasakan sampai ke permukaan bumi.
+                     </p>
+                     <a class="read_more" href="https://bbmkg3.bmkg.go.id/tentang-gempa" target="_blank">Pelajari Lebih Lanjut</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end coronata -->
+   
+        <!-- protect -->
+      <div class="protect">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Saat Bencana Terjadi</h2>
+                     <p>Berikut adalah beberapa hal yang dapat dilakukan ketika terjadi gempa bumi 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+           <div class="protect_bg">
+         <div class="container">
+             <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                  <div class="owl-carousel owl-theme">
+                     <div class="item">
+                        <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src="{{ url_for('static', filename='images/pro1.png') }}" alt="#"/></i>
+                           <h3>Cari Tempat Berlindung</h3>
+                           <span> Saat gempa terjadi, segeralah cari tempat berlindung yang aman, seperti di bawah meja yang kokoh atau di dekat dinding bagian dalam bangunan. Hal ini dapat melindungi Anda dari benda jatuh atau reruntuhan.</span>
+                          </div>
+                           <a class="read_more" href="https://www.bmkg.go.id/gempabumi/mitigasi/antisipasi-gempabumi" target="_blank">Read More</a>
+                        </div>
+                     </div>
+                     <div class="item">
+                          <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src= "{{ url_for('static', filename='images/pro2.png') }}" alt="#"/></i>
+                           <h3>Gunakan Tangga Darurat</h3>
+                           <span>Jika berada di gedung bertingkat, hindari penggunaan lift karena risiko terjebak ketika aliran listrik terputus. Gunakan tangga darurat yang dirancang khusus untuk evakuasi saat keadaan darurat.</span>
+                          </div>
+                           <a class="read_more" href="https://www.bmkg.go.id/gempabumi/mitigasi/antisipasi-gempabumi" target="_blank">Read More</a>
+                        </div>
+                     </div>
+                     <div class="item">
+                         <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src="{{ url_for('static', filename='images/pro3.png') }}" alt="#"/></i>
+                           <h3>Jangan Berlindung di Pohon/Tiang</h3>
+                           <span>Hindari berlindung di dekat pohon atau tiang listrik karena berpotensi tumbang dan menyebabkan cedera serius. Pilih area terbuka yang jauh dari objek tinggi yang berisiko roboh.</span>
+                          </div>
+                           <a class="read_more" href="https://www.bmkg.go.id/gempabumi/mitigasi/antisipasi-gempabumi" target="_blank">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
+         </div>
+      </div>
+      <!-- end protect -->
+    <!-- cases -->
+      <div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Bencana Gempa Bumi di Indonesia</h2>
+                     <p>Berikut adalah beberapa tragedi bencana gempa bumi terbesar dengan kerusakan terparah di Indonesia</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('static', filename='images/cases1.jpeg') }}"alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Selengkapnya</a>
+                     <div class="nostrud">
+                        <h3>Gempa Bumi dan Tsunami Samudra Hindia</h3>
+                        <p>Salah satu gempa bumi terbesar di Indonesia terjadi di Aceh pada tanggal 26 Desember 2004. Gempa bumi ini berkekuatan 9,1 Skala Richer dari dasar Samudera Hindia dengan kedalaman 30 km lempeng Hindia yang disubduksi oleh lempeng Burma. Gempa bumi ini sempat naik menjadi 9,3 Skala Richer hingga menimbulkan gelombang tsunami berketinggian 30 meter dan kecepatan mencapai 100m/detik atau 360 km/jam.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('static', filename='images/cases2.avif') }}"alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Selengkapnya</a>
+                     <div class="nostrud">
+                        <h3>Gempa Bumi Yogyakarta</h3>
+                        <p>Gempa bumi di Indonesia kembali mengguncang Pulau Jawa, yaitu Yogyakarta dan wilayah Jawa Tengah. Gempa bumi ini terjadi pada tanggal 27 Mei 2006 pukul 05.55 WIB. Sejumlah bangunan mulai dari rumah warga, pusat perbelanjaan, situs kuno, dan lokasi wisata mengalami kerusakan yang parah. Gempa berkekuatan magnitudo 6,4 dengan kedalam hingga 7,5 km ini menyebabkan 6.234 orang meninggal dunia. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('static', filename='images/cases3.jpg') }}" alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Selengkapnya</a>
+                     <div class="nostrud">
+                        <h3>Gempa bumi dan Tsunami Sulawesi 2018</h3>
+                        <p>Pada 28 September 2018 silam, telah terjadi gempa besar di ibu kota Sulawesi Tengah di kawasan lembah Palu. Gempa ini berkekuatan 7,4 SR dan terjadi gempa susulan berulang kali. Episentrum gempa terletak di barat Kecamatan Sirenja, 26 km utara Donggala, dan 80 km barat laut Kota Palu dengan kedalaman 10 km. </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end cases -->
+         <!-- doctors
+      <div class="doctors">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>What doctors say..</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-6">
+                     <div id="ho_efcet" class="reader text_align_center">
+                        <i><img src="{{ url_for('static', filename='images/doctor1.png') }}" alt="#"/></i>
+                        <h3>Dr.Golap den</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                        <span><img src="{{ url_for('static', filename='images/do.png') }}" alt="#"/></span>
+                     </div>
+                  </div>
+                          <div class=" col-md-6">
+                     <div id="ho_efcet" class="reader text_align_center">
+                        <i><img src="{{ url_for('static', filename='images/doctor2.png') }}" alt="#"/></i>
+                        <h3>Dr.Golap den</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                        <span><img src="{{ url_for('static', filename='images/do.png') }}" alt="#"/></span>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </div>
+      end cases -->
+<!-- update -->
+<div class="update">
+   <div class="cevery_white">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="cevery_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <form id="colof" class="form_subscri">
+                  <input class="newsl" placeholder="" type="text" name="Email">
+               
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- update -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>MENU</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Beranda</a><li>
+                                 <li><a href="javascript:void(0)">Peta</a><li>
+                                 <li> <a href="javascript:void(0)">Klaster</a><li>
+                              </ul>
+                             
+           
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                             <h3>Tentang</h3>
+                              <p>Website ini menyajikan edukasi gempa bumi, peta persebaran gempa di Indonesia, dan klasterisasi daerah rawan gempa untuk meningkatkan kewaspadaan masyarakat.
+                              </p>
+                           </div>
+                        </div>
+                     
+                
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Contact  Us</h3>
+                                <ul class="top_infomation">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           Indonesia  
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                           Hubungi
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                           <a href="Javascript:void(0)">Kirim Email</a>
+                        </li>
+                     </ul>
+                            
+                           
+                     </div>
+                  </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Negara</h3>
+                              <div class="map">
+                                <img src="{{ url_for('static', filename='images/map.png') }}" alt="#"/>
+                              </div>
+                           </div>
+                        </div>
+                    
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2025 All Rights Reserved.</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+      
+   </body>
+</html>
